@@ -14,7 +14,7 @@
     - docker
     - tomcat
   - name: Deploy a WAR file
-    COPY: src= addressbook.war dest=/usr/share/tomcat/webapps
+    COPY: src=addressbook.war dest=/usr/share/tomcat/webapps
     notify: Restart tomcat
   handlers:
   - name: Restart tomcat
